@@ -1,0 +1,22 @@
+{
+  "name": "aquaproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mortyl/aquaproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mortyl/aquaproject/issues"
+  },
+  "homepage": "https://github.com/Mortyl/aquaproject#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
