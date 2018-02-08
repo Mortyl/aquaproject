@@ -12,7 +12,7 @@
         event.preventDefault()
         let hash = event.target.hash.replace("#", "")
         let link = document.getElementById(hash)
-        const position = link.getBoundingClientRect().y 
+        const position = link.getBoundingClientRect().y
         let top = 0
 
         let smooth = setInterval(() => {
@@ -31,7 +31,7 @@
                 window.scrollTo(0, top)
             }
 
-        }, 3)
+        }, .5)
 	}
 
 })(document)
