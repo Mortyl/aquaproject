@@ -1,0 +1,66 @@
+
+.header-main {
+	background-color: $blue-dark;
+	padding: $spacer 0px;
+
+	@media only screen and (max-width: 699px) {
+		text-align: center; 
+	}
+
+	@media only screen and (min-width: 700px) {
+		overflow: auto;
+	}
+}
+
+.nav-main {
+	li {
+		display: inline-block;
+
+		@media only screen and (max-width: 699px) {
+			font-size: 1.2rem; 
+			padding: $spacer-sml;
+		}
+
+		@media only screen and (min-width: 700px) {
+			padding: $spacer;
+		}
+
+		a {
+			color: $light;
+			text-decoration: none;
+
+			&:hover {
+				color: $blue-light;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 700px) {
+		float: right;
+	}
+
+	@media only screen and (min-width: 900px) {
+		margin-top: 3px; 
+	}
+
+}
+
+.logo-text {
+	font-family: $main-font;
+	color: $blue-light;
+	display: inline-block;
+
+	@media only screen and (max-width: 699px) {
+		font-size: 2rem; 
+	}
+
+	@media only screen and (min-width: 700px) and (max-width: 899px) {
+		font-size: 2.2rem;
+		margin-top: 10px;
+	}
+
+	@media only screen and (min-width: 900px) {
+		font-size: 3.75rem; 
+	}
+}
+

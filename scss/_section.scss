@@ -1,0 +1,92 @@
+@keyframes vicki {
+    0% {
+    	border-color: #00bbff;
+    }
+    25% {
+    	border-color: #00a1ff;
+    }
+    50% {
+    	border-color: #0021ff;
+    }
+    75% {
+    	border-color: #007bff;
+    }
+    100% {
+    	border-color: #00bbff;
+    }
+}
+.zone {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @media only screen and (max-width: 699px) {
+        display: block;
+
+       figure + figure {
+        margin-top: $spacer-2;
+       }
+    }
+}
+
+img {
+	border-radius: 50%;
+	  border: 4px solid purple;
+    height: auto;
+	animation: vicki infinite 5s;
+
+    @media only screen and (max-width: 699px) {
+        max-width: 200px;
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 899px) {
+        max-width: 180px;
+    }
+
+    @media only screen and (min-width: 900px) {
+        max-width: 240px;
+    }
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+	font-family: $font-amatic;
+	font-size: 40px;
+	color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+	font-family: $font-nanum;
+	color: white;
+}
+
+.section-dark {
+	background-color: $colour-dark;
+}
+
+.section-twilight {
+	background-color: $blue-mid;
+}
+
+.section-sunlit {
+	background-color: $blue-light;
+}
+
+body {
+    background: linear-gradient(#e6f9ff, #99e6ff, #1ac6ff, #0099cc, #004d66, #002633);
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
