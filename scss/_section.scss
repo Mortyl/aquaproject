@@ -25,16 +25,33 @@
     padding-bottom: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+
+    @media only screen and (max-width: 699px) {
+        display: block;
+
+       figure + figure {
+        margin-top: $spacer-2;
+       }
+    }
 }
 
 img {
-    
 	border-radius: 50%;
-    height:260px;
-    width: 260px;
-	border: 2px solid purple;
+	  border: 4px solid purple;
+    height: auto;
 	animation: vicki infinite 5s;
+
+    @media only screen and (max-width: 699px) {
+        max-width: 200px;
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 899px) {
+        max-width: 180px;
+    }
+
+    @media only screen and (min-width: 900px) {
+        max-width: 240px;
+    }
 }
 
 figure {
@@ -47,8 +64,6 @@ figcaption {
 	color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-	
-
 }
 
 p {
@@ -69,7 +84,7 @@ p {
 }
 
 body {
-    background: linear-gradient(#e6f9ff, #99e6ff, #1ac6ff);
+    background: linear-gradient(#e6f9ff, #99e6ff, #1ac6ff, #0099cc, #004d66, #002633);
     // background-attachment: fixed;
     // background-position: center;
     // background-repeat: no-repeat;
