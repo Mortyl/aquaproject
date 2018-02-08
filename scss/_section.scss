@@ -23,7 +23,8 @@
     padding-right: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
 }
 
@@ -42,8 +43,10 @@ figure {
 
 figcaption {
 	font-family: $font-amatic;
-	font-size: 20px;
+	font-size: 40px;
 	color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 	
 
 }
@@ -65,9 +68,10 @@ p {
 	background-color: $blue-light;
 }
 
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+body {
+    background: linear-gradient(#e6f9ff, #99e6ff, #1ac6ff);
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 }
