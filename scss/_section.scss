@@ -18,16 +18,30 @@
 .zone {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 50px;
+    
 }
 
 img {
+    
 	border-radius: 50%;
+    height:260px;
+    width: 260px;
 	border: 2px solid purple;
 	animation: vicki infinite 5s;
 }
 
+figure {
+    text-align: center;
+}
+
 figcaption {
-	font-family: $font-nanum;
+	font-family: $font-amatic;
 	font-size: 20px;
 	color: white;
 	
@@ -35,7 +49,7 @@ figcaption {
 }
 
 p {
-	font-family: $font-amatic;
+	font-family: $font-nanum;
 	color: white;
 }
 
@@ -49,4 +63,11 @@ p {
 
 .section-sunlit {
 	background-color: $blue-light;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
