@@ -1,0 +1,38 @@
+@keyframes vicki {
+  0% {
+    border-color: #00bbff; }
+  25% {
+    border-color: #00a1ff; }
+  50% {
+    border-color: #0021ff; }
+  75% {
+    border-color: #007bff; }
+  100% {
+    border-color: #00bbff; } }
+
+.zone {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+img {
+  border-radius: 50%;
+  border: 2px solid purple;
+  animation: vicki infinite 5s; }
+
+figcaption {
+  font-family: Nanum Pen Script, sans-serif;
+  font-size: 20px;
+  color: white; }
+
+p {
+  font-family: Amatic SC, sans-serif;
+  color: white; }
+
+.section-dark {
+  background-color: #002966; }
+
+.section-twilight {
+  background-color: #0066CC; }
+
+.section-sunlit {
+  background-color: #80B2FF; }
