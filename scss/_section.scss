@@ -25,16 +25,33 @@
     padding-bottom: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+
+    @media only screen and (max-width: 699px) {
+        display: block;
+
+       figure + figure {
+        margin-top: $spacer-2;
+       }
+    }
 }
 
 img {
-    
 	border-radius: 50%;
-    height:260px;
-    width: 260px;
-	border: 4px solid purple;
+	  border: 4px solid purple;
+    height: auto;
 	animation: vicki infinite 5s;
+
+    @media only screen and (max-width: 699px) {
+        max-width: 200px;
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 899px) {
+        max-width: 180px;
+    }
+
+    @media only screen and (min-width: 900px) {
+        max-width: 240px;
+    }
 }
 
 figure {
@@ -47,8 +64,6 @@ figcaption {
 	color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-	
-
 }
 
 p {
