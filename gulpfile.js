@@ -16,31 +16,31 @@ gulp.task('sass', function () {
 });
 
 gulp.task('minify-css', () => {
-  return gulp.src('css/styles.css')
-	.pipe(cleanCSS({compatibility: 'ie8'}))
-	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('./css/'));
-});
+   return gulp.src('css/styles.css')
+ 	.pipe(cleanCSS({compatibility: 'ie8'}))
+ 	.pipe(rename({suffix: '.min'}))
+ 	.pipe(gulp.dest('./css/'));
+ });
 gulp.task('styles', function(callback){
 	gulpSequence('sass', 'minify-css')(callback)
 });
 
-gulp.task('scripts', function() {         
-  return gulp.src(['js/scripts.js'])
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('./js/'));
-});
+ gulp.task('scripts', function() {         
+   return gulp.src(['js/scripts.js'])
+     .pipe(concat('all.js'))
+	  .pipe(gulp.dest('./js/'));
+ });
 
 gulp.task('uglify', function() {
-  gulp.src('js/all.js')
-    .pipe(uglify())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./js'))
-});
+   gulp.src('js/all.js')
+     .pipe(uglify())
+     .pipe(rename({suffix: '.min'}))
+     .pipe(gulp.dest('./js'))
+ });
 
 gulp.task('watch', function () {
   gulp.watch('./scss/*.scss', ['styles']);
   gulp.watch('./js/*.js', ['scripts']);
-  gulp.watch(['uglify']);
+  
 });
 
