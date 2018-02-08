@@ -18,24 +18,41 @@
 .zone {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
 }
 
 img {
+    
 	border-radius: 50%;
+    height:260px;
+    width: 260px;
 	border: 2px solid purple;
 	animation: vicki infinite 5s;
 }
 
+figure {
+    text-align: center;
+}
+
 figcaption {
-	font-family: $font-nanum;
-	font-size: 20px;
+	font-family: $font-amatic;
+	font-size: 40px;
 	color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 	
 
 }
 
 p {
-	font-family: $font-amatic;
+	font-family: $font-nanum;
 	color: white;
 }
 
@@ -49,4 +66,12 @@ p {
 
 .section-sunlit {
 	background-color: $blue-light;
+}
+
+body {
+    background: linear-gradient(#e6f9ff, #99e6ff, #1ac6ff);
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 }
