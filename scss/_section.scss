@@ -37,8 +37,8 @@
 
 img {
 	border-radius: 50%;
+	  border: 4px solid purple;
     height: auto;
-	border: 2px solid purple;
 	animation: vicki infinite 5s;
 
     @media only screen and (max-width: 699px) {
@@ -84,7 +84,7 @@ p {
 }
 
 body {
-    background: linear-gradient(#e6f9ff, #99e6ff, #1ac6ff);
+    background: linear-gradient(#e6f9ff, #99e6ff, #1ac6ff, #0099cc, #004d66, #002633);
     // background-attachment: fixed;
     // background-position: center;
     // background-repeat: no-repeat;
