@@ -7,11 +7,10 @@
 	});
 
 	function smoothScroll(event) {
-	    if (event.target.hash !== 'A') { //Check if tag is an anchor
+	    if (event.target.hash !== 'A') { 
 	        event.preventDefault()
 	        let hash = event.target.hash.replace("#", "")
 	        let link = document.getElementById(hash)
-	        //Find the where you want to scroll
 	        const position = link.getBoundingClientRect().y 
 	        let top = 0
 
@@ -31,10 +30,8 @@
 	                window.scrollTo(0, top)
 	            }
 
-	        }, 3)//6 milliseconds is the faster chrome runs setInterval
+	        }, 3)
 	    }
 	}
 
 })(document)
-
-console.log(document)
