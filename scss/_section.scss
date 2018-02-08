@@ -28,6 +28,15 @@
     
 }
 
+h2 {
+    grid-area: 1 / 1 / 1 /  4;
+    font-size: 60px;
+    color: $colour-Pri;
+    padding-bottom: 4%;
+    margin-top: -6%;
+
+}
+
 img {
     
 	border-radius: 50%;
@@ -44,7 +53,7 @@ figure {
 figcaption {
 	font-family: $font-amatic;
 	font-size: 40px;
-	color: white;
+	color: $colour-Pri;
     padding-top: 20px;
     padding-bottom: 20px;
 	
@@ -53,7 +62,7 @@ figcaption {
 
 p {
 	font-family: $font-nanum;
-	color: white;
+	color: $colour-Pri;
 }
 
 .section-dark {
