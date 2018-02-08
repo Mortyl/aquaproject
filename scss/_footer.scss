@@ -1,0 +1,13 @@
+
+footer {
+	text-align: center;
+	background-color: $blue-dark;
+	padding: $spacer-2;
+	margin-top: $spacer-2;
+	p {
+		color: $blue-light;
+		@media only screen and (max-width: 699px) {
+			font-size: 1.2rem; 
+		}
+	}
+}
